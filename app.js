@@ -89,7 +89,7 @@ function validateText(text){
         document.getElementById("outputText").placeholder = "El texto suministrado no cumple con las especificaiones.";
         setTimeout(() => {
             document.getElementById("outputText").placeholder = "Ningún mensaje fue encontrado";
-            document.getElementById('inputText').value = "";
+            //document.getElementById('inputText').value = "";
         }, 2000);
         return false;
     }else if(containsUpperCase){
@@ -98,7 +98,7 @@ function validateText(text){
         document.getElementById("outputText").placeholder = "El texto suministrado no cumple con las especificaiones.";
         setTimeout(() => {
             document.getElementById("outputText").placeholder = "Ningún mensaje fue encontrado";
-            document.getElementById('inputText').value = "";
+            //document.getElementById('inputText').value = "";
         }, 2000);
         return false;
     }else{
