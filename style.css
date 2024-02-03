@@ -462,12 +462,13 @@ button:hover {
         font-size:1.2em ;
         width: 100%;
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         box-sizing: border-box;
         resize: none;
         background-color: #f4f4f4;
         font-family:  'Montserrat';
         padding:50px;
+        margin-left: 25px;
     }
 
     #inputText::placeholder{
@@ -484,7 +485,7 @@ button:hover {
         display: inline-block;
         font-size:1.2em auto ;
         width: 100%;
-        padding: 25px;
+        padding: 30px;
         border: 1px solid #828282;
         border-radius: 50px;
         box-sizing: border-box;
