@@ -332,6 +332,7 @@ h1 {
     width: 100%;
     padding: 20px;
     border: none;
+    font-size: 2.1em;
     border-radius: 10px;
     box-sizing: border-box;
     resize: none;
@@ -371,6 +372,7 @@ h1 {
     resize: none;
     height: 150px;
     font-family:  'Montserrat';
+    font-size: 2.1em;
     
 
 }
