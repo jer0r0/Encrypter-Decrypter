@@ -515,6 +515,9 @@ button:hover {
         border-radius: 5px;
         z-index: 1000;
       }
+      .contenedoresTodo{
+        padding-left: 10%;
+    }
     
     
     .encryptor-container {
