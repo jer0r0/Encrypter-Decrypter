@@ -204,6 +204,7 @@
         margin-right: 10px;
         font-family: 'Montserrat';
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        visibility: hidden;
     }
     
     
@@ -432,6 +433,7 @@ h1 {
     margin-right: 10px;
     font-family: 'Montserrat';
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
 }
 
 
