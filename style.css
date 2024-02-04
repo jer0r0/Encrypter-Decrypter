@@ -372,13 +372,13 @@ h1 {
     resize: none;
     height: 150px;
     font-family:  'Montserrat';
-    font-size: 2.1em;
+    font-size: 1.9em;
     
 
 }
 #outputText::placeholder{
     color: rgb(0, 0, 0);
-    font-size: 1.1em;
+    font-size: 0.7em;
     font-weight: bold;
     font-family:  'Montserrat';
     text-align: center;
