@@ -53,21 +53,40 @@
         border-radius: 7px;
         z-index: 1000;
       }
+      .alerta{
+        display: flex;
+        padding-top: 20px;
+        
+    }
+    
+    #imgAlert{
+        margin-right: 1px;
+        position: relative;
+        
+    }
+    
+    #alertaChar{
+        flex:2;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 2px;
+        font-size: 0.7em;
+    }
+    
     
     
     .encryptor-container {
         max-width: 800px;
-        
-        padding: 50px;
+        padding: 10px;
         background-color: #f6f5f5;
         border: #0A3871;
         border-radius: 8px;
         /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
     }
+
     
     
     
-    .output-copy-container,
     .input-button-container {
         display: flex;
         flex-direction: column;
@@ -83,7 +102,7 @@
         box-sizing: border-box;
         resize: none;
         background-color: #f4f4f4;
-        height: 130px;
+        height: 120px;
         font-family:  'Montserrat';
     }
 
@@ -96,16 +115,31 @@
         line-height: 30px;
     
     }
+
+    .output-copy-container{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: auto;
+        background:white;
+        border-radius: 15px;
+        border: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        background: white;
+    }
     #outputText{
         width: 100%;
         padding: 15px;
         border: 1px solid #828282;
-        border-radius: 25px;
+        border-radius: 15px;
         box-sizing: border-box;
         resize: none;
-        height: 150px;
+        height: 100px;
         font-family:  'Montserrat';
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: white;
+        
     }
     #outputText::placeholder{
         color: rgb(0, 0, 0);
@@ -126,7 +160,7 @@
     }
     .button-container2 {
         display: flex;
-        padding: 30px ;
+        padding: 10px ;
     }
 
     
@@ -160,11 +194,11 @@
     #copyButton {
         width: 50%;
         flex: 2;
-        padding: 20px;
+        padding: 15px;
         background-color: #fff;
         color: #0A3871;
         border: 5rem;
-        border-radius: 20px;
+        border-radius: 10px;
         border-color: #0A3871;
         cursor: pointer;
         margin-right: 10px;
@@ -181,6 +215,21 @@
     
     button:hover {
         border: #0A3871;
+    }
+    .redes{
+        width: 140px;
+        margin-top: 5px;
+        margin: auto;
+    }
+    
+    .redes li{
+        margin-right: 1px;
+        margin-top: 10px;
+        display: inline-block;
+        width: 30%;
+    }
+    .redes li a img{
+        max-width: 35px;
     }
 }
 
@@ -240,6 +289,24 @@ h1 {
     z-index: 1000;
   }
 
+  .alerta{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#imgAlert{
+    margin-right: 12px;
+    position: relative;
+    height: auto;
+}
+
+#alertaChar{
+    flex:2;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1em;
+}
 
 .encryptor-container {
     max-width: 800px;
@@ -253,7 +320,7 @@ h1 {
 
 
 
-.output-copy-container,
+
 .input-button-container {
     display: flex;
     flex-direction: column;
@@ -280,16 +347,31 @@ h1 {
     line-height: 75px;
 
 }
+
+.output-copy-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    margin-left: auto;
+    background:white;
+    border-radius: 50px;
+    border: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: white;
+}
 #outputText{
     width: 100%;
-    padding: 25px;
-    border: 1px solid #828282;
+    padding: 30px;
+    border: white;
     border-radius: 50px;
     box-sizing: border-box;
     resize: none;
     height: 150px;
     font-family:  'Montserrat';
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
 }
 #outputText::placeholder{
     color: rgb(0, 0, 0);
@@ -362,9 +444,23 @@ button:last-child {
 button:hover {
     border: #0A3871;
 }
+.redes{
+    width: 200px;
+    margin-top: 10px;
+    margin: auto;
 }
 
-@media only screen and (min-width: 1101px) and (max-width:1500px) {
+.redes li{
+    margin-top: 10px;
+    display: inline-block;
+    width: 30%;
+}
+.redes li a img{
+    max-width: 35px;
+}
+}
+
+@media only screen and (min-width: 1101px) and (max-width:1803px) {
     body {
         font-family: 'Libre Franklin';
         margin: 0;
@@ -424,7 +520,7 @@ button:hover {
     .encryptor-container {
         max-width: 1800px;
         max-height: 1060px;
-        margin: 19px auto;
+        margin: 10px auto;
         padding: 10px;
         background-color: #f6f5f5;
         border: #0A3871;
@@ -444,16 +540,7 @@ button:hover {
     }
     
     
-    .output-copy-container{
-        width: 20%;
-        height: 120%;
-        height: auto;
-        text-align: center;
-        display: inline-block;
-        flex-direction: column;
-        margin-left: auto;
-        
-    }
+    
    
     
     #inputText{
@@ -479,20 +566,32 @@ button:hover {
         text-align: center;
         line-height: 30px;
     }
-
-    #outputText{
+    .output-copy-container{
+        width: 20%;
         height: 400px;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: auto;
+        background:white;
+        border-radius: 50px;
+        border: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        
+    }
+    #outputText{
+        height: 450px;
         display: inline-block;
         font-size:1.2em auto ;
         width: 100%;
         padding: 30px;
-        border: 1px solid #828282;
-        border-radius: 50px;
         box-sizing: border-box;
         resize: none;
         font-family:  'Montserrat';
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         cursor:auto;
+        border:white;
+        border-radius: 50px;
     }
 
     #outputText::placeholder{
@@ -502,11 +601,32 @@ button:hover {
         text-align: center;
         line-height: 30px;
     }
+    
+    
 
     .button-container2,
     .button-container1 {
     display: flex;
     padding: 30px ;
+    }
+
+    .alerta{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    #imgAlert{
+        margin-right: 40px;
+        position: relative;
+        height: auto;
+    }
+
+    #alertaChar{
+        flex:2;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 0.8em;
     }
 
     #encryptButton {
@@ -565,6 +685,7 @@ button:hover {
         margin-right: 10px;
         font-family: 'Libre Franklin';
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        visibility: hidden;
     }
     
     
@@ -577,10 +698,23 @@ button:hover {
     button:hover {
         background-color: #0A3871;
     }
+    .redes{
+        width: 200px;
+        margin:0 auto;
+    }
+
+    .redes li{
+        
+        display: inline-block;
+        width: 30%;
+    }
+    .redes li a img{
+        max-width: 35px;
+    }
 }
     
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 1804px) {
     body {
         font-family: 'Libre Franklin';
         margin: 0;
@@ -640,8 +774,8 @@ button:hover {
     .encryptor-container {
         max-width: 1800px;
         max-height: 1060px;
-        margin: 25px auto;
-        padding: 50px;
+        margin: 15px auto;
+        padding: 2px;
         background-color: #f6f5f5;
         border: #0A3871;
         border-radius: 8px;
@@ -660,17 +794,26 @@ button:hover {
     }
     
     
-    .output-copy-container{
-        width: 20%;
-        height: 120%;
-        height: auto;
-        text-align: center;
-        display: inline-block;
-        flex-direction: column;
-        margin-left: auto;
-        
-    }
+    
    
+    .alerta{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    #imgAlert{
+        margin-right: 35px;
+        position: relative;
+    }
+
+    #alertaChar{
+        flex:2;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .contenedoresTodo{
+        padding-left: 10%;
+    }
     
     #inputText{
         height: 700px;
@@ -678,7 +821,7 @@ button:hover {
         font-size:1.6em ;
         width: 100%;
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         box-sizing: border-box;
         resize: none;
         background-color: #f4f4f4;
@@ -695,34 +838,58 @@ button:hover {
         line-height: 30px;
     }
 
-    #outputText{
+    .output-copy-container{
+        width: 20%;
         height: 700px;
+        height: auto;
+        text-align: center;
         display: inline-block;
-        font-size:1.2em auto ;
-        width: 100%;
-        padding: 25px;
-        border: 1px solid #828282;
+        flex-direction: column;
+        margin-left: auto;
+        background:white;
         border-radius: 50px;
+        border: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #outputText{
+        height: 750px;
+        display: inline-block;
+        font-size: 1.6em ;
+        width: 100%;
+        padding: 50px;
         box-sizing: border-box;
         resize: none;
         font-family:  'Montserrat';
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         cursor:auto;
+        border:white;
+        border-radius: 50px;
+        background: transparent;
     }
+    
+
+    
 
     #outputText::placeholder{
         color: rgb(0, 0, 0);
-        font-size: 1.6em;
+        font-size: 1.2em;
         font-family:  'Montserrat';
         text-align: center;
         line-height: 30px;
     }
+
+    .output-container{
+        background: white;
+        border-radius: 50px;
+    }
+
 
     .button-container2,
     .button-container1 {
     display: flex;
     padding: 30px ;
     }
+
 
     #encryptButton {
         flex: 2;
@@ -768,29 +935,37 @@ button:hover {
     }
     
     #copyButton {
-        
+        display: none;
         flex: 2;
         padding: 20px;
         background-color: #fff;
         color: #0A3871;
-        border: 5rem;
+        border: 10rem;
         border-radius: 20px;
         border-color: #0A3871;
         cursor: pointer;
         margin-right: 10px;
         font-family: 'Libre Franklin';
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: block;
+        visibility: hidden;
     }
-    
-    
-    
-    
     button:last-child {
         margin-right: 0;
     }
-    
     button:hover {
         background-color: #0A3871;
+    }
+    .redes{
+        width: 200px;
+        margin: 15px auto;
+    }
+    .redes li{
+        display: inline-block;
+        width: 30%;
+    }
+    .redes li a img{
+        max-width: 35px;
     }
 }
     
