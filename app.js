@@ -1,5 +1,15 @@
-//funcion para mostrar que el texto esta vacio.
+//funcion para cambiar el titulo de la pagina cada vez que el usuario se mueva de ella 
+window.addEventListener("focus",()=>{
+    document.title = " Encrypter & Decrypter"
+})
+let docTittle = document.title;  
+window.addEventListener("blur",()=>{
+    document.title = "Encr & Decr / Come back :("
+})
+  
 
+
+//funcion para mostrar que el texto esta vacio.
 function mostrarAviso(mensaje,duracion) {
     var aviso = document.getElementById("aviso");
     aviso.textContent=mensaje;
